@@ -6,19 +6,22 @@ var YOLO = {
   ],
   github: {},
 
-  authType: 'basic',
+  // authType: 'basic',
+  authType: 'oauth',
   username: 'username here',
   password: 'password here',
-  OAuth: '',
-  owner: 'owner',
-  repo: 'repo',
+  OAuth: 'a610b80191020b5e33509f73e7ea922a874ac04f',
+  owner: 'fclimited',
+  repo: 'soar',
 
   swag: function() {
     this.auth(this.authType, {
       username: this.username,
-      password: this.password
+      password: this.password,
+      token: this.OAuth
     });
 
+    // put loading gifs
     var issues = this.github.getIssues(this.owner, this.repo);
 
     //          options, callback
@@ -75,7 +78,7 @@ var YOLO = {
       });
       return;
     }
-    if (authtype.toLowerCase() === 'oauth') {
+    if (authType.toLowerCase() === 'oauth') {
       if (!credentials.token) {
         throw "OAuth token is required";
       }
