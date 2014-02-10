@@ -43,9 +43,13 @@ var YOLO = {
       $this = $(this);
       issueId = $this.find('.list-group-item-number').text();
 
-      username = issues[issueCount].assignee.login;
-
-      $this.find('.list-group-item-meta').append('<li>Assigned to <a href="/' + username + '">' + username + '</a></li>');
+      if (issues[issueCount].assignee === null) {
+        $this.find('.list-group-item-meta').append('<li>Task is unassigned</li>');
+      }
+      else {
+        username = issues[issueCount].assignee.login;
+        $this.find('.list-group-item-meta').append('<li>Assigned to <a href="/' + username + '">' + username + '</a></li>');
+      }
     });
   },
 
