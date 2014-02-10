@@ -18,3 +18,8 @@ Todo:
 
 * Add options page for Auth Type and username, password or OAuth (there is a base that's from the forked repo)
 * Add filter for assignee (for example, only show assigned to me)
+
+
+Thanks to:
+
+[Michael's Github JS Library](https://github.com/michael/github)
