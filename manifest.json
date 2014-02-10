@@ -3,7 +3,7 @@
         "exclude_globs": [],
         "include_globs": ["*"],
         "css": [],
-        "js": ["jquery.min.js", "yolo.js"],
+        "js": ["jquery.min.js", "required.js", "yolo.js"],
         "matches": ["http://www.github.com/*/pulls",
             "https://www.github.com/*/pulls"
         ],
