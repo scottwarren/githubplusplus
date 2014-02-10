@@ -11,8 +11,8 @@ var YOLO = {
   username: 'username here',
   password: 'password here',
   OAuth: 'a610b80191020b5e33509f73e7ea922a874ac04f',
-  owner: 'fclimited',
-  repo: 'soar',
+  owner: window.location.pathname.split('/')[1],
+  repo: window.location.pathname.split('/')[2],
 
   swag: function() {
     this.auth(this.authType, {
