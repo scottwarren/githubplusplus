@@ -13,13 +13,6 @@ You then need to add this extension to Chrome.
 
 [Read here about adding an unpacked extension to Chrome](http://developer.chrome.com/extensions/getstarted.html#unpacked)
 
-
-Todo:
-
-* Add options page for Auth Type and username, password or OAuth (there is a base that's from the forked repo)
-* Add filter for assignee (for example, only show assigned to me)
-
-
 Thanks to:
 
 [Michael's Github JS Library](https://github.com/michael/github)
