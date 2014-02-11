@@ -4,34 +4,32 @@ Github++
 Chrome Extension to add features to Github
 
 To use, you need to edit GithubPlusPlus.js and add either your username and password or
-add an OAuth token (and change authType to 'OAuth' instead of 'basic'). (this is near the bottom of the file)
+add an OAuth token (and change authType to 'OAuth' instead of 'basic'):
 
-Usage:
-
-Usage:
-step 1, either:
-OAuth:
+For 'OAuth Authentication':
+```
 var auth = {
   authType: 'oauth',
   oauth: 'authkeyhere'
 }
-`*****OR*****`
+var ghpp = new GithubPlusPlus(auth);
+```
+
+Or for 'Basic Authentication'
+```
 Basic Auth:
 var auth = {
   authType: 'basic',
   username: 'username here',
   password: 'password here'
 }
-
-Step 2:
 var ghpp = new GithubPlusPlus(auth);
+```
 
-[Creating an OAuth token](https://help.github.com/articles/creating-an-access-token-for-command-line-use)
+If you need an auth token you can read about it [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use)
 
-You then need to add this extension to Chrome.
+You then need to add this extension to Chrome, you can [read about it here](http://developer.chrome.com/extensions/getstarted.html#unpacked)
 
-[Read here about adding an unpacked extension to Chrome](http://developer.chrome.com/extensions/getstarted.html#unpacked)
-
-Thanks to:
+This library uses:
 
 [Michael's Github JS Library](https://github.com/michael/github)
