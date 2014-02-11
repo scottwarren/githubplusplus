@@ -35,16 +35,16 @@ var YOLO = {
    * @param  {Array} issues array of issues that were returned from the Github API
    */
   parseIssues: function(errors, issues) {
-    var issueId,
-      $this,
+    // var issueId,
+    var $this,
       username;
 
     $('.pulls-list-group .list-group-item').each(function(issueCount) {
       $this = $(this);
-      issueId = $this.find('.list-group-item-number').text();
+      // issueId = $this.find('.list-group-item-number').text();
 
       if (issues[issueCount].assignee === null) {
-        $this.find('.list-group-item-meta').append('<li>Task is unassigned</li>');
+        $this.find('.list-group-item-meta').append('<li>Assigned to no one</li>');
       }
       else {
         username = issues[issueCount].assignee.login;
