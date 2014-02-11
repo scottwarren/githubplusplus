@@ -4,11 +4,10 @@
         "include_globs": ["*"],
         "css": [],
         "js": ["jquery.min.js", "required.js", "yolo.js"],
-        "matches": ["http://www.github.com/*/pulls",
-            "https://www.github.com/*/pulls"
-        ],
-        "matches": ["http://github.com/*/pulls",
-            "https://github.com/*/pulls"
+        "matches": ["*://www.github.com/*/pulls",
+            "*://github.com/*/pulls",
+            "*://github.com/*/pulls/?*",
+            "*://github.com/*/pulls?*"
         ],
         "all_frames": true
     }],
