@@ -115,5 +115,5 @@ GithubPlusPlus.prototype.parseIssues = function(errors, issues) {
 
 new GithubPlusPlus({
   authType: 'oauth',
-  oauth: 'a610b80191020b5e33509f73e7ea922a874ac04f'
+  oauth: 'enter auth key'
 });

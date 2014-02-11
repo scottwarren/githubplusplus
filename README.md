@@ -3,9 +3,28 @@ Github++
 
 Chrome Extension to add features to Github
 
-To use, you need to edit yolo.js and add either your username and password or
-add an OAuth token (and change authType to 'OAuth' instead of 'basic').
-You need to edit the repo/owner as well.
+To use, you need to edit GithubPlusPlus.js and add either your username and password or
+add an OAuth token (and change authType to 'OAuth' instead of 'basic'). (this is near the bottom of the file)
+
+Usage:
+
+Usage:
+step 1, either:
+OAuth:
+var auth = {
+  authType: 'oauth',
+  oauth: 'authkeyhere'
+}
+`*****OR*****`
+Basic Auth:
+var auth = {
+  authType: 'basic',
+  username: 'username here',
+  password: 'password here'
+}
+
+Step 2:
+var ghpp = new GithubPlusPlus(auth);
 
 [Creating an OAuth token](https://help.github.com/articles/creating-an-access-token-for-command-line-use)
 
