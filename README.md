@@ -1,6 +1,7 @@
 Github++
 ============
 
+** update: use the issues page. **
 Chrome Extension to add features to Github
 
 To use, you need to edit GithubPlusPlus.js and add either your username and password or
