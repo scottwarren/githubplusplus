@@ -1,7 +1,8 @@
 Github++
 ============
 
-** update: use the issues page. **
+***use the issues page to see Pull Requests with an enriched interface***
+
 Chrome Extension to add features to Github
 
 To use, you need to edit GithubPlusPlus.js and add either your username and password or
