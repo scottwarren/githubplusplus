@@ -28,7 +28,7 @@ var auth = {
 var ghpp = new GithubPlusPlus(auth);
 ```
 
-If you need an auth token you can read about it [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use)
+If you need an auth token you can [read about it here](https://help.github.com/articles/creating-an-access-token-for-command-line-use)
 
 You then need to add this extension to Chrome, you can [read about it here](http://developer.chrome.com/extensions/getstarted.html#unpacked)
 
