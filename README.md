@@ -1,7 +1,8 @@
+##Update:
+***instead of this plugin, use the issues page to see Pull Requests with an enriched interface***
+
 Github++
 ============
-
-***use the issues page to see Pull Requests with an enriched interface***
 
 Chrome Extension to add features to Github
 
